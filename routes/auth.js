@@ -4,9 +4,9 @@ const router = express.Router();
 // Import routes
 const signupRoute = require('./signup');
 const loginRoute = require('./login');
-
-// Use signup and login routes
+const getAllUsersRoute = require('./getAllusers'); 
+// Use signup and login routes & GetAllUsers
 router.use(signupRoute);
 router.use(loginRoute);
-
+router.use(getAllUsersRoute);
 module.exports = router;

@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/auth');
+const cors = require('cors');
 
 const app = express();
 
@@ -10,7 +11,10 @@ connectDB();
 
 // Middleware
 app.use(bodyParser.json());
-
+app.use(cors({
+  origin: "*",
+  credentials: true
+}));
 // Routes
 app.use('/api', authRoutes);
 

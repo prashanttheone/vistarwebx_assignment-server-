@@ -13,8 +13,8 @@
       }
     ],
     "env": {
-      "MONGODB_URI": "@mongodb_uri",
-      "JWT_SECRET": "@jwt_secret"
+     "MONGODB_URI": "mongodb+srv://praytoprashant:QAp2ZtnbjFDJ9vY1@cluster0.jleg6fn.mongodb.net/vistaar_webx",
+      "JWT_SECRET": "prashant"
     }
   }
   
